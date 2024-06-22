@@ -1,4 +1,6 @@
 **Steps to Run the Project**
+
+
 **Set Up Environment:** Ensure you have Python and Flask installed.
 **Place API Key:** Replace 'your_api_key' with your actual OpenAI API key in app.py.
 **Run the Flask App:** Execute python app.py in your terminal.
