@@ -11,16 +11,11 @@
       **5.Generate Logos:** Fill out the form with the project name, optional tagline, and number of logos, then submit to generate logos.
 
 
-Folder Structre to execute the project
-        **project**/
-        │
-        ├── app.py
-        ├── **templates**/
-        │   └── index.html
-        └── **static**/
-            ├── **logos**/
-            └── **images**/
-                └── background.jpg
+**Folder Structre to execute the project**
+
+![image](https://github.com/gokulsrilakula/Logo-generator-using-OpenAI/assets/89767722/87f04ac9-db41-41c5-bb28-7e3c3edd0ad1)
+
 
 **User Interface for the app**
+
 ![image](https://github.com/gokulsrilakula/Logo-generator-using-OpenAI/assets/89767722/f41bb34e-ce8a-489c-acdc-22f81587b8af)
