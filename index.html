@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Logo Generator</h1>
+        <form method="POST" class="mt-4">
+            <div class="form-group">
+                <label for="project_name">Project Name</label>
+                <input type="text" class="form-control" id="project_name" name="project_name" required>
+            </div>
+            <div class="form-group">
+                <label for="tagline">Tagline (Optional)</label>
+                <input type="text" class="form-control" id="tagline" name="tagline">
+            </div>
+            <div class="form-group">
+                <label for="num_logos">Number of Logos</label>
+                <input type="number" class="form-control" id="num_logos" name="num_logos" value="5" min="1" max="10" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Generate Logos</button>
+        </form>
+        <div class="mt-4">
+            <h2>Generated Logos</h2>
+            <div class="row">
+                {% for logo in logos %}
+                <div class="col-md-4">
+                    <img src="{{ url_for('send_logo', filename=logo) }}" class="img-fluid" alt="Logo {{ loop.index }}">
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
